@@ -9,9 +9,10 @@
 import UIKit
 
 class DRAliCloudDateVC: DRNotBaseVC {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "云栖精选"
+        
     }
 }

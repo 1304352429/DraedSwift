@@ -32,25 +32,27 @@ class DRAliCloudVC: DRBaseVC {
     // MARK: - 事件响应
     //
     @objc private func scanfCodeClick() -> () {
-        
     }
 }
 
 // MARK: - 系统delegate
 // MARK: - UITableViewDataSource
 extension DRAliCloudVC : UITableViewDataSource {
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20;
     }
-
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return DRAliCloudCell.cellWithTableView(tableView)
     }
 }
 
 // MARK: - UITableViewDelegate
+
 extension DRAliCloudVC : UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     }
 }
+
 // MARK: - 自定义delegate
